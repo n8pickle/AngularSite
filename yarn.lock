@@ -132,7 +132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/schematics@npm:9.0.5":
+"@angular-devkit/schematics@npm:9.0.5, @angular-devkit/schematics@npm:^9.0.5":
   version: 9.0.5
   resolution: "@angular-devkit/schematics@npm:9.0.5"
   dependencies:
@@ -1704,6 +1704,7 @@ __metadata:
   resolution: "angular-site@workspace:."
   dependencies:
     "@angular-devkit/build-angular": ^0.900.5
+    "@angular-devkit/schematics": ^9.0.5
     "@angular/animations": ~9.0.5
     "@angular/cli": ~9.0.5
     "@angular/common": ~9.0.5
@@ -1733,7 +1734,7 @@ __metadata:
     ts-node: ~8.3.0
     tslib: ^1.10.0
     tslint: ~5.18.0
-    typescript: ^3.8.3
+    typescript: 3.7.5
     zone.js: ~0.10.2
   languageName: unknown
   linkType: soft
@@ -10568,13 +10569,13 @@ typescript@3.6.4:
   languageName: node
   linkType: hard
 
-typescript@^3.8.3:
-  version: 3.8.3
-  resolution: "typescript@npm:3.8.3"
+typescript@3.7.5:
+  version: 3.7.5
+  resolution: "typescript@npm:3.7.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2/519b11576247fe3570d89a2aa757d8f666aafc0cb9465a6cdd4df09c1dc6bf7285f0c6008d2ac7a55ea26457e767aaab819f58439d80af2cce1d9805b2be1034
+  checksum: 2/48a96fb7dc48746e6b76cf0946545181b0d5013368e510768402f1374e6c6a9f29b00e8ca4f40bc7523a655473f7bc7c55d1c8458970e96b7187bcee1b47e96b
   languageName: node
   linkType: hard
 
@@ -10588,13 +10589,13 @@ typescript@^3.8.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.8.3#builtin<compat/typescript>":
-  version: 3.8.3
-  resolution: "typescript@patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=273569"
+"typescript@patch:typescript@3.7.5#builtin<compat/typescript>":
+  version: 3.7.5
+  resolution: "typescript@patch:typescript@npm%3A3.7.5#builtin<compat/typescript>::version=3.7.5&hash=273569"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2/345573d9ee784f75c4facb98e838d28fe1376648abd627e3bca256237965940f331bf0ed502de6068f0cca9111eac675ca26d901202547068d52d66685e42be2
+  checksum: 2/15c69b5cf2b7005de5cfe3120496f4ceb99c628bd69e735b65b2629b4c34cc867a9fd26de6f05d841e08a05727af6d6e2979c39220d2364b5b6c5854fd7d88ff
   languageName: node
   linkType: hard
 
