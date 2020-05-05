@@ -1,0 +1,20 @@
+div {
+  background-color: #222222;
+}
+
+.zippyExpander {
+  display: flex;
+  flex-direction: row;
+}
+
+.margin-right {
+  padding-right: 50%;
+}
+
+.zippyTitle {
+  flex: 1;
+}
+.zippyText {
+  padding: 2%;
+  flex: 1;
+}

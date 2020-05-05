@@ -1,4 +1,59 @@
 <h1>Angular</h1>
-<picture></picture>
+<bootstrap-panel>
+  <ng-container class="heading">Header</ng-container>
+  <div class="body">Body</div>
+</bootstrap-panel>
+<div>
+  <like-button
+    [isLiked]="post.isLiked"
+    (change)="onLikedChange($event)"
+  ></like-button>
+  <reusable-like-button></reusable-like-button>
+</div>
 <courses></courses>
-<authors></authors>
+<div *ngIf="contents.length > 0; then tableContents; else elseBlock">
+  Hello World
+</div>
+<ng-template #tableContents> Table of Contents</ng-template>
+<ng-template #elseBlock>
+  Loading... <span class="spinner-border spinner-border-sm text-light"></span
+></ng-template>
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewMode == 'map'"
+      (click)="viewMode = 'map'"
+      style="cursor: pointer;"
+      >Map View</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewMode == 'list'"
+      (click)="viewMode = 'list'"
+      style="cursor: pointer;"
+      >List View</a
+    >
+  </li>
+</ul>
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map View Content</div>
+  <div *ngSwitchCase="'list'">List View Content</div>
+  <div *ngSwitchDefault>Otherwise</div>
+</div>
+<button (click)="onAdd()">Add</button>
+<ul>
+  <li
+    *ngFor="let author of authors; even as isEven"
+    [ngStyle]="{ 'background-color': isEven ? 'grey' : '' }"
+  >
+    {{ author.name }}
+    <button (click)="onRemove(author)"></button>
+    <span *ngIf="isEven">(EVEN)</span>
+  </li>
+</ul>
+<input type="text" [appInputFormat]="'uppercase'" />
+<zippy title="Hello World">sup</zippy>

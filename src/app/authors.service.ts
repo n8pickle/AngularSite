@@ -1,5 +1,9 @@
 export class AuthorsService {
   getAuthors() {
-    return ["Good Ol' Brandon", "Lemony Snikers Bars", "JK Bowling"];
+    return [
+      { ranking: 1, name: "Good Ol' Brandon" },
+      { ranking: 3, name: "Lemony Snikers Bars" },
+      { ranking: 2, name: "JK Bowling" },
+    ];
   }
 }
