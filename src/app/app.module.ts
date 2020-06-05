@@ -14,6 +14,7 @@ import { BootstrapPanelComponent } from "./bootstrap-panel/bootstrap-panel.compo
 import { ReusableLikeButtonComponent } from "./reusable-like-button/reusable-like-button.component";
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ZippyComponent } from './zippy/zippy.component';
     ReusableLikeButtonComponent,
     InputFormatDirective,
     ZippyComponent,
+    ContactFormComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule],
   providers: [CoursesService, AuthorsService],

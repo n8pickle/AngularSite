@@ -1,5 +1,7 @@
 div {
-  background-color: #222222;
+  background-color: #3f3f3f;
+  border: 1px #222222;
+  border-radius: 10px;
 }
 
 .zippyExpander {
@@ -17,4 +19,14 @@ div {
 .zippyText {
   padding: 2%;
   flex: 1;
+}
+
+.zippyContent {
+  background-color: #222222;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.outer-panel {
+  margin: 1%;
 }

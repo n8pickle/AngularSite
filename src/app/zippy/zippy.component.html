@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default outer-panel">
   <div class="card zippyText">
     <div class="zippyExpander">
       <span class="zippyTitle">{{ title }}</span>
@@ -12,7 +12,7 @@
       ></span>
     </div>
   </div>
-  <div class="card zippyText" *ngIf="isExpanded">
+  <div class="card zippyText zippyContent" *ngIf="isExpanded">
     <ng-content></ng-content>
   </div>
 </div>

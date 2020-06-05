@@ -1,0 +1,16 @@
+.form-control.ng-touched.ng-invalid {
+  border: 1.5px solid rgba(255, 0, 0, 0.5);
+}
+
+.form-control {
+  background: #2f2f2f;
+  border: 2px solid #aaaaaa;
+  color: #aaaaaa;
+}
+
+.dark-alert {
+  background: rgba(255, 0, 0, 0.25);
+  border: 1.5px rgba(255, 0, 0, 0.5);
+  border-radius: 5% 5% 5% 5%;
+  padding: 1%;
+}
