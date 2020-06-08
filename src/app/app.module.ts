@@ -15,6 +15,7 @@ import { ReusableLikeButtonComponent } from "./reusable-like-button/reusable-lik
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     InputFormatDirective,
     ZippyComponent,
     ContactFormComponent,
+    CourseFormComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule],
   providers: [CoursesService, AuthorsService],

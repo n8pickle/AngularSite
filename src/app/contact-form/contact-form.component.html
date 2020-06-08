@@ -1,7 +1,6 @@
 <form #f="ngForm" (ngSubmit)="submit(f)">
   <div class="form-group">
     <div ngModelGroup="contact" #contact="ngModelGroup">
-      <div *ngIf="!contact.valid">...</div>
       <label for="firstName">Name</label>
       <input
         required
