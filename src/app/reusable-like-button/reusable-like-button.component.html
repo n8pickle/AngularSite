@@ -1,0 +1,6 @@
+<i
+  class="fa fa-lg"
+  [ngClass]="{ 'fa-battery-full': !isSelected, 'fa-battery-empty': isSelected }"
+  (click)="onClick()"
+></i>
+<span>{{ this.selectedCount }}</span>

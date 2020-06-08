@@ -1,0 +1,18 @@
+<div class="panel panel-default outer-panel">
+  <div class="card zippyText">
+    <div class="zippyExpander">
+      <span class="zippyTitle">{{ title }}</span>
+      <span
+        (click)="onClick()"
+        class="fa fa-lg right-margin"
+        [ngClass]="{
+          'fa-caret-down': !isExpanded,
+          'fa-caret-up': isExpanded
+        }"
+      ></span>
+    </div>
+  </div>
+  <div class="card zippyText zippyContent" *ngIf="isExpanded">
+    <ng-content></ng-content>
+  </div>
+</div>
