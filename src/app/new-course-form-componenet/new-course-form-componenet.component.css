@@ -1,0 +1,9 @@
+.dark {
+  background-color: #222222;
+}
+
+.dark-textbox {
+  background-color: #3f3f3f;
+  border-color: #222222;
+  color: #eeeeee;
+}
