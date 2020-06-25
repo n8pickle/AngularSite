@@ -1,1 +1,17 @@
-<p>posts-component works!</p>
+<input
+  #title
+  (keyup.enter)="createPost(title)"
+  type="text"
+  class="form-control"
+/>
+<ul class="list-group dark">
+  <li *ngFor="let post of posts" class="list-group-item dark">
+    <button (click)="updatePost(post)" class="btn btn-default btn-sm">
+      Update
+    </button>
+    {{ post.title }}
+    <button (click)="deletePost(post)" class="btn btn-secondary btn-sm">
+      Delete
+    </button>
+  </li>
+</ul>

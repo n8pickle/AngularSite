@@ -10,3 +10,8 @@ body {
 .input {
   margin-right: 2%;
 }
+
+.dark {
+  background-color: #2f2f2f;
+  color: #e0e0e0;
+}

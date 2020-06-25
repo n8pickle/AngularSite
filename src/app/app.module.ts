@@ -1,4 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpModule } from "@angular/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -17,9 +18,10 @@ import { ZippyComponent } from "./zippy/zippy.component";
 import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { CourseFormComponent } from "./course-form/course-form.component";
 import { SignupFormComponent } from "./signup-form/signup-form.component";
-import { NewCourseFormComponenetComponent } from './new-course-form-componenet/new-course-form-componenet.component';
-import { FormChangePasswordComponent } from './form-change-password/form-change-password.component';
-import { PostsComponentComponent } from './posts-component/posts-component.component';
+import { NewCourseFormComponenetComponent } from "./new-course-form-componenet/new-course-form-componenet.component";
+import { FormChangePasswordComponent } from "./form-change-password/form-change-password.component";
+import { PostsComponentComponent } from "./posts-component/posts-component.component";
+import { PostService } from "./services/post.service";
 
 @NgModule({
   declarations: [
@@ -39,8 +41,14 @@ import { PostsComponentComponent } from './posts-component/posts-component.compo
     FormChangePasswordComponent,
     PostsComponentComponent,
   ],
-  imports: [BrowserModule, FormsModule, NgbModule, ReactiveFormsModule],
-  providers: [CoursesService, AuthorsService],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    NgbModule,
+    ReactiveFormsModule,
+    HttpModule,
+  ],
+  providers: [CoursesService, AuthorsService, PostService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
